@@ -86,6 +86,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'http://pinteresting-surferalp.herokuapp.com' }
 
   #sets Paperclip to upload images to Amazon S3
+  # very important that your aws keys should not include  /     Slash isareti anahtar kodda olmamali.   
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
