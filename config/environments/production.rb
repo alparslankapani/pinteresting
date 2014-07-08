@@ -83,6 +83,8 @@ Rails.application.configure do
 
   #Required for Heroku
   #Set hostname with the actualone. 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { host: 'http://pinteresting-surferalp.herokuapp.com' }
 
   #sets Paperclip to upload images to Amazon S3
