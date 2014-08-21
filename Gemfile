@@ -17,6 +17,10 @@ gem 'aws-sdk', '~> 1.5.7'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem 'searchkick'
+gem 'debugger'
+gem 'tire'
+gem 'acts-as-taggable-on'
 
 group :production do 
 	gem 'pg'

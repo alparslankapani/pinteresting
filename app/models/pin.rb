@@ -6,4 +6,11 @@ class Pin < ActiveRecord::Base
 
 	validates :image, presence: true
 	validates :description, presence: true
+
+	 acts_as_taggable
+
+	def to_param
+		"#{id}-#{description.parameterize}"
+	end
+
 end
